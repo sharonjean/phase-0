@@ -1,17 +1,18 @@
 #Wireframe Reflection
 
-[my wireframe index](/imgs/wireframe-index.png)
-[my wireframe blog index](/imgs/wireframe-blog-index.png)
+[my wireframe index](file:///Users/SharonJean/Dev/phase-0/week-2/imgs/wireframe-index.png)
+<br>
+[my wireframe blog index](file:///Users/SharonJean/Dev/phase-0/week-2/imgs/wireframe-blog-index.png)
 
-What is a wireframe?
+<b>What is a wireframe?</b>
 
 Wireframes are used in between concept and construction of building a website. You can consider it a map of what your site will look like, and gives you an opportunity to build a mock-up of what it could potentially look like once live.
 
-What are the benefits of wireframing?
+<b>What are the benefits of wireframing?</b>
 
 Wireframing is useful because you get to think about your site not just from a functional perspective, but from a design and usability state, which is really helpful in building something meaningful to potential users. It also helps streamline the workflow by allowing someone to stay on track during the development phase, by not have to potentially redo work because the layout wasn't created before constructing the site.
 
-Did you enjoy wireframing your site?
+<b>Did you enjoy wireframing your site?</b>
 
 Very much! I completely find value in this stage, and will always include this in my process go forward.
 
