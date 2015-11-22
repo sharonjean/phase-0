@@ -1,8 +1,8 @@
 #Wireframe Reflection
 
-[my wireframe index](/week-2/imgs/wireframe-index.png)
+[my wireframe index](imgs/wireframe-index.png)
 <br>
-[my wireframe blog index](/week-2/imgs/wireframe-blog-index.png)
+[my wireframe blog index](imgs/wireframe-blog-index.png)
 
 <b>What is a wireframe?</b>
 
