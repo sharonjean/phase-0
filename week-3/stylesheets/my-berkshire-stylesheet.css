@@ -1,0 +1,31 @@
+.text {
+    width: 90%;
+    background-color: #FFFFFF;
+    color: #000080
+}
+
+a:link {
+    color: #800080
+}
+
+a:visited {
+    color: #FF0000
+}
+
+#small {
+    font-size:12px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 span {
+    font-size: 28px;
+}
+
+.geico {
+    text-align: center;
+}
