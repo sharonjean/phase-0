@@ -10,35 +10,35 @@
   a *float* is a number with a decimal point
 
 ##What is the difference between float and integer division? How would you explain the difference to someone who doesn't know anything about programming?
-  '''
+  ```
   When it comes to any math you might normally use a calculator for, it's best to use floats. Since integers are numbers, and only allow for whole numbers, they cannot return a precise answer, which is why we use floats.
-  *integer division* 9/2 = 4
-  *float division* 9/2 = 4.5
-  '''
+  **integer division** 9/2 = 4
+  **float division** 9/2 = 4.5
+  ```
 
 ##Release 2 | Chapter 2
 
-  *hours in a year*
+  **hours in a year**
 
-  '''ruby
+  ```ruby
   puts 365 * 24
-  '''
+  ```
 
-  *minutes in a decade*
+  **minutes in a decade**
 
-  '''ruby
+  ```ruby
   puts 60*24*365*10
-  '''
+  ```
 #Release 7: Reflect
 
 ##How does Ruby handle addition, subtraction, multiplication, and division of numbers?
 
   Ruby uses special characters so that the computer knows what function to run.
   So, as follows:
-  * (asterisk) multiplication
-  - subtraction
-  + addition
-  / division
+  (*) (asterisk) multiplication
+  (-) subtraction
+  (+) addition
+  (/) division
 
 ##What are strings? Why and when would you use them?
 
