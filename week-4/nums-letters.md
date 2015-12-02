@@ -1,5 +1,11 @@
 #Numbers, Letters and Variables Assignment
 
+[defining-variables](https://github.com/sharonjean/phase-0/blob/master/week-4/defining-variables.rb)
+
+[simple-string](https://github.com/sharonjean/phase-0/blob/master/week-4/simple-string.rb)
+
+[basic-math](https://github.com/sharonjean/phase-0/blob/master/week-4/basic-math.rb)
+
 ##What does puts do?
 
   *puts* returns nil, and prints the output to the console with a new line. It essentially shows on the screen whatever you include after puts.
