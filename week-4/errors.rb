@@ -3,7 +3,7 @@
 # Analyze the Errors
 
 # I worked on this challenge [by myself].
-# I spent [#] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 # --- error -------------------------------------------------------
 
