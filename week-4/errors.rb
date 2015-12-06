@@ -1,3 +1,5 @@
+[errors](https://github.com/sharonjean/phase-0/blob/master/week-4/errors.rb)
+
 # Analyze the Errors
 
 # I worked on this challenge [by myself].
