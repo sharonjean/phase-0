@@ -1,6 +1,7 @@
 # Define an Empty Method
 
-def do_something(city, state, zip)
+def do_something city, state, zip
+  puts city, state, zip.to_s
 end
 
 
