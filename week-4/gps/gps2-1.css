@@ -1,0 +1,53 @@
+body{
+  font-family: sans-serif;
+}
+header {
+  background-color: blue;
+  color: white;
+  text-align: center;
+}
+.column-1, .column-2 {
+  border-radius: 2%;
+  border: 1px solid black;
+  width: 48%;
+  float: left;
+}
+.column-2{
+  float:right;
+}
+.column-1 h2 {
+  color: #FF0080
+}
+
+footer {
+  clear: both;
+}
+
+h2{
+  font-size: 1em;
+  }
+p{
+  font-size: 10px;
+}
+
+img{
+  height: 10%;
+  width: 10%;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+a:active{
+  color: red;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:visited {
+  color: green;
+}
