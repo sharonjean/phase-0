@@ -8,10 +8,8 @@
 #output: Array of alphabetized strings and integers
 
 #pseudocode
-#define process to sort list of values
-which contain strings and integers.
-#iterate through list and sort values
-alphabetically by converting them to #downcase strings.
+#define process to sort list of values which contain strings and integers.
+#iterate through list and sort values alphabetically by converting them to #downcase strings.
 #return alphabetized list of values.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
