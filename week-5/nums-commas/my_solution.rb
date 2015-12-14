@@ -21,55 +21,11 @@
 
 # 1. Initial Solution
 
-# def separate_comma(number)
 
-#   num = number.to_s.split("")
-#   new_num = num.size/3.0
-
-#   if num.size < 4
-#     p number.to_s
-#   elsif num.size%3 == 0
-#     n = -4
-#     (new_num.to_i-1).times do |i|
-#     num.insert(n, ',')
-#     n -= 4
-#   end
-#   num.join("")
-#   else
-#     n = -4
-#     new_num.to_i.times do |i|
-#     num.insert(n, ',')
-#     n -= 4
-#     end
-#   num.join("")
-#   end
-# end
 
 # 2. Refactored Solution
 
-def separate_comma(number)
 
-  num = number.to_s.split("")
-  new_num = num.size/3.0
-
-  if num.size < 4
-    p number.to_s
-  elsif num.size%3 == 0
-    n = -4
-    (new_num.to_i-1).times do |i|
-    num.insert(n, ',')
-    n -= 4
-  end
-  num.join("")
-  else
-    n = -4
-    new_num.to_i.times do |i|
-    num.insert(n, ',')
-    n -= 4
-    end
-  num.join("")
-  end
-end
 
 # 3. Reflection
 # What was your process for breaking the problem down? What different approaches did you consider?
