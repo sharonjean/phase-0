@@ -63,3 +63,18 @@ startup_names.map! do |element|
     element << "ly"
   end
 end
+
+# Reflections:
+
+# What are some general rules you can apply to nested arrays?
+
+#You access multi-dimensional arrays by specifying bracketed values for each "layer"
+
+#What are some ways you can iterate over nested arrays?
+
+#You can iterate over inner arrays by utilizing an iterator inside an iterator
+#nested_array.each { |element| p element }
+
+#Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+
+#We learned that .map! destructive method must be used, otherwise original values would be returned for Release 3.
