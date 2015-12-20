@@ -12,8 +12,6 @@
 # Steps:
 
 # Define collection container Die, which accepts an array of strings
-# Initialize Die method
-# Create instances of Die and set to roll, label and side.
 # Randomly return string when Die#roll is called
 # Raise an ArgumentError if array is empty
 # Else, return array
@@ -23,12 +21,22 @@
 
 class Die
   def initialize(labels)
+    @labels = labels
   end
 
   def sides
+    rand(@label) + 1
   end
 
-  def roll
+  def roll(string)
+    container = []
+    if Die.new == 0
+      raise ArgumentError.new "No dice."
+    else
+      container.times { |string| string = rand(@label) + 1 }
+      container << string
+    end
+    container
   end
 end
 
