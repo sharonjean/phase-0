@@ -16,25 +16,27 @@
 
 # 1. Initial Solution
 
-# class Die
-#   def initialize(sides)
-#     @sides = sides
+class Die
+  def initialize(sides)
+    @sides = sides
+  end
 
-#     if rand(sides) + 1
-#       return sides
-#     else sides < 1
-#       raise ArgumentError.new, "Not valid number #{sides}."
-#     end
-#   end
+  def roll(n)
+    generate_array = []
+    n.times do
+      value = rand(@sides) + 1
+  end
+    if rand(sides) + 1
+      return sides
+    else sides < 1
+      raise ArgumentError.new, "Not valid number #{sides}."
+    end
+  end
 
-#   def sides
-#     @sides
-#   end
-
-#   def roll
-#     @roll_num
-#   end
-# end
+  def roll
+    @roll_num
+  end
+end
 
 
 
