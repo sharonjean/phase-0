@@ -17,28 +17,25 @@
 # 1. Initial Solution
 
 class Die
-  def initialize(sides)
-    @sides = sides
-  end
 
-  def roll(n)
-    generate_array = []
-    n.times do
-      value = rand(@sides) + 1
-  end
-    if rand(sides) + 1
+  def initialize (sides)
+    @sides = sides
+    if sides < 1
+      raise ArgumentError.new("This is not a valid number.")
+    else
       return sides
-    else sides < 1
-      raise ArgumentError.new, "Not valid number #{sides}."
     end
   end
 
-  def roll
-    @roll_num
+  def sides
+    return @sides
   end
+
+  def roll
+    return rand(@sides) + 1
+  end
+
 end
-
-
 
 # 3. Refactored Solution
 
@@ -46,12 +43,14 @@ class Die
   attr_accessor :sides, :roll
   def initialize(sides)
     @sides = sides
-
-    if rand(sides) + 1
-      return sides
-    else sides < 1
-      raise ArgumentError.new, "Not valid number #{sides}."
+    if sides < 1
+      raise ArgumentError.new("Not a valid number.")
+    else
+      return roll
     end
+  end
+  def roll
+    return rand(@sides) + 1
   end
 end
 
@@ -61,8 +60,8 @@ end
 # What is an ArgumentError and why would you use one?
 #An ArgumentError is raised when you do not pass the appropriate amount of arguments. It basically flags you that the argument passed cannot be used, e.g.  "wrong number of arguments (2 for 0). It's expecting 0, but received 2"
 
-# What new Ruby methods did you implement? What challenges and successes did you have in implementing them?
-#I had to do a full review on classes which was helpful. Still, I had one example fail (due to my if / else statement, raised an ArgumentError)
+# What new Ruby methods did you implement?
+# ArgumentError
 
 # What is a Ruby class?
 #Classes are first-class objects.
