@@ -1,29 +1,34 @@
 # A Nested Array to Model a Bingo Board SOLO CHALLENGE
 
-# I spent [#] hours on this challenge.
+# I spent [2] hours on this challenge.
 
 
 # Release 0: Pseudocode
 # Outline:
 
 # Create a method to generate a letter ( b, i, n, g, o) and a number (1-100)
-  #fill in the outline here
-  def generate_value(value)
-    value.map { bingo(rand) + rand(1..100) }.join
+
+  def generate_call
+    return board.sample + bingo.sample
   end
 
-
 # Check the called column for the number called.
-  #fill in the outline here
+  def check_board(board)
+    if board.include?(generate_call)
+      board.replace = "x"
+    else
+      return board
+    end
+  end
 
 # If the number is in the column, replace with an 'x'
-  if value == board_value
+
 
 # Display a column to the console
-  #fill in the outline here
+
 
 # Display the board to the console (prettily)
-  #fill in the outline here
+
 
 # Initial Solution
 
