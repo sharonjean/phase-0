@@ -21,27 +21,38 @@ var adam = {
   spouse: terah,
 };
 
-
-terah = {
-  spouse: adam,
-  weight: 125,
-  children: "",
-};
-
-terah.push(spouse);
 terah.spouse = adam;
 
 delete terah.eyeColor;
 
+terah.weight = 125;
+
+terah.children = {};
+
+terah.children.carson = {
+  name: "Carson"
+};
+terah.children.carter = {
+  name: "Carter"
+};
+terah.children.colton = {
+  name: "Colton"
+}
+
+adam.children = terah.children;
+adam.children = terah.children;
+
+
 // __________________________________________
 // Reflection: Use the reflection guidelines
 //
-//
-//
-//
-//
-//
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work? I had issues with adam.children = terah.children; it only works when at the bottom of the stack of code!
 
+// How difficult was it to add and delete properties outside of the object itself?
+// It was really easy!
+
+// What did you learn about manipulating objects in this challenge?
+// It feels very similar to renaming variables in Ruby. This challenge helped me understand better how JavaScript objects behave together.
 
 // __________________________________________
 // Driver Code:  Do not alter code below this line.
