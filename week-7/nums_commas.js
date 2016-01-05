@@ -1,7 +1,7 @@
 // Separate Numbers with Commas in JavaScript **Pairing Challenge**
 
 
-// I worked on this challenge with: .
+// I worked on this challenge with: [Gary Wong, Raj].
 
 // Pseudocode
 // Input: Function that accepts an integer for an argument
@@ -14,34 +14,26 @@
 
 // Example: separateComma(1569743) == "1,569,743"
 
-// Initial Solution
-
-// function separateComma(number) {
-//   number = number.toString().split('').reverse().join('');
-//   var string = "";
-//     for (var count = 0; count ; count++)
-//     string += ",";
-//   };
+Initial Solution
 
 function separateComma(number) {
-  var string = String(number);
-  while (string.length <= 3)
-    return string;
-  while (string.length > 3)
-    string = "," + string;
-  };
 
+  var reverseNumber = number.toString().split('').reverse();
+
+  var string = "";
+    for (var i = reverseNumber.length - 1; i >= 0; i--) {
+      string += reverseNumber[i];
+      if (i % 3 == 0 && i != 0) string += [','];
+    }
+  console.log(string)
 }
-
-
-console.log(separateComma(1234567));
-}
-
-
-// Refactored Solution
-
 
 
 // Your Own Tests (OPTIONAL)
+separateComma(1234567);
+separateComma(1234);
+separateComma(8273648273);
+
 
 // Reflection
+

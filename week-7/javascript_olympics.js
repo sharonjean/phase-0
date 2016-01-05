@@ -2,7 +2,7 @@
 
 // I paired [by myself, with: Gino] on this challenge.
 
-// This challenge took me [#] hours.
+// This challenge took me [2] hours.
 
 
 
