@@ -20,10 +20,10 @@
 
 def serving_size_calc(item_to_make, num_of_ingredients)
   library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  suggested_good=""
+  suggested_good = ""
 
-  library.each do |food|
-    if library.include?(item_to_make)
+
+    if library.include?(item_to_make) == true
       return library
     else
       raise ArgumentError.new("#{item_to_make} is not a valid input")
@@ -31,15 +31,16 @@ def serving_size_calc(item_to_make, num_of_ingredients)
 
   serving_size = library[item_to_make]
   remaining_ingredients = num_of_ingredients % serving_size
+  qty_to_make = num_of_ingredients / serving_size
 
   if remaining_ingredients == 0
-    return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}"
+    return "Calculations complete: Make #{qty_to_make} of #{item_to_make}"
   else
     library.each do |item, number| if remaining_ingredients >= number
       suggested_good = number
   end
 end
-  return "Calculations complete: Make #{num_of_ingredients / serving_size} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: #{suggested_good}"
+  return "Calculations complete: Make #{qty_to_make} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: #{suggested_good}"
   end
 
 p serving_size_calc("pie", 7)
