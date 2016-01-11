@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
-// This challenge took me [#] hours.
+// I worked on this challenge with: Kevin Huang
+// This challenge took me [2] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -107,21 +107,15 @@ for (var posNames in voteCount){
 
 
 
-
-
-
-// __________________________________________
-// Refactored Solution
-
-
-
-
-
-
 // __________________________________________
 // Reflection
 
-
+// What did you learn about iterating over nested objects in JavaScript?
+// That it is similar to Ruby, (but kind of a nightmare)!
+// Were you able to find useful methods to help you with this?
+// My pair found a way of accessing the hashes that didn't require any methods.
+// What concepts were solidified in the process of working through this challenge?
+// Accessing a hash in JavaScript.
 
 
 
