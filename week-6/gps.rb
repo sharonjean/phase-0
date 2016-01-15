@@ -1,6 +1,6 @@
 # Your Names
 # 1)Sharon Claitor
-# 2)
+# 2)N/A
 
 # We spent [1] hours on this challenge.
 
@@ -9,23 +9,29 @@
 #Input: Hash of baked goods, that accepts two arguments
 #Output: String of calculations for baked goods that counts serving sizes, returns leftover ingredients, and raises error when invalid input is entered
 
-#Create hash that accepts a key of type of baked good, and a value of number of ingredients
+#Create hash that accepts a key of the type of baked good, and a value of the number of ingredients
 #Set an error counter to 3, where an ArgumentError is raised if an invalid key input is entered,
 #Otherwise iterate over hash to determine how many ingredients are needed, and  calculate remaining ingredients to suggest a baked good.
 
 #Features to add
 #Suggested baking items
-
-#Create a class?
-
+# https://github.com/Devbootcamp/phase-0-code/blob/master/week-6/gps2_3.rb
 def serving_size_calc(item_to_make, num_of_ingredients)
   library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
   suggested_good = ""
 
 
-    if library.include?(item_to_make) == true
-      return library
-    else
+    # if library.include?(item_to_make) == false
+    # https://signalvnoise.com/posts/2699-making-sense-with-rubys-unless
+    #if !library.include?(item_to_make) #== false
+
+  # if !not true
+  #   do this
+  # end
+
+    unless library.include?(item_to_make) #== false
+    #   return library
+    # else
       raise ArgumentError.new("#{item_to_make} is not a valid input")
     end
 
@@ -36,20 +42,25 @@ def serving_size_calc(item_to_make, num_of_ingredients)
   if remaining_ingredients == 0
     return "Calculations complete: Make #{qty_to_make} of #{item_to_make}"
   else
-    library.each do |item, number| if remaining_ingredients >= number
-      suggested_good = number
+    library.each do |item, number|
+      if remaining_ingredients >= number
+        suggested_good = number
+      end
+    end
+
   end
-end
   return "Calculations complete: Make #{qty_to_make} of #{item_to_make}, you have #{remaining_ingredients} leftover ingredients. Suggested baking items: #{suggested_good}"
   end
+end
 
 p serving_size_calc("pie", 7)
-p serving_size_calc("pie", 8)
-p serving_size_calc("cake", 5)
-p serving_size_calc("cake", 7)
-p serving_size_calc("cookie", 1)
-p serving_size_calc("cookie", 10)
-p serving_size_calc("THIS IS AN ERROR", 5)
+# p serving_size_calc("pie", 8)
+# p serving_size_calc("cake", 5)
+# p serving_size_calc("cake", 7)
+# p serving_size_calc("cookie", 1)
+# p serving_size_calc("cookie", 10)
+# p serving_size_calc("THIS IS AN ERROR", 5)
+
 
 #  Reflection
 
